@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Flexflix – Netflix-Style Landing (Flexbox Only)</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header" aria-label="Main Navigation">
+    <a class="logo" href="#" aria-label="Flexflix Home">
+      <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M4 3h4l3 10 3-10h4v18h-3V7l-3 10h-2L7 7v14H4V3Z" fill="#e50914"/></svg>
+      <span>Flexflix</span>
+    </a>
+    <nav class="nav" aria-label="Primary">
+      <a href="#">Home</a>
+      <a href="#">Series</a>
+      <a href="#">Films</a>
+      <a href="#">New & Popular</a>
+      <a href="#">My List</a>
+    </nav>
+    <div class="actions">
+      <button class="btn lang" aria-label="Change language">🌐 Language</button>
+      <button class="btn signin">Sign In</button>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Unlimited movies, TV shows and more.</h1>
+      <p>Watch anywhere. Cancel anytime. Ready to watch? Enter your email to create or restart your membership.</p>
+      <form class="email-cta" onsubmit="event.preventDefault(); alert('Thanks! This is a demo.');">
+        <input type="email" placeholder="Email address" aria-label="Email address" required />
+        <button class="btn signin" type="submit">Get Started »</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Rows -->
+  <section class="row">
+    <div class="row-controls">
+      <h2 class="row-title">Trending Now</h2>
+      <div>
+        <button class="ctrl" data-scroll="-1" aria-label="Scroll left">◀</button>
+        <button class="ctrl" data-scroll="1" aria-label="Scroll right">▶</button>
+      </div>
+    </div>
+    <div class="scroller" id="row-1">
+      <a class="card" href="#" aria-label="Movie 1"><img src="https://picsum.photos/seed/a1/400/600" alt="Poster 1"><div class="meta">Movie 1</div></a>
+      <a class="card" href="#" aria-label="Movie 2"><img src="https://picsum.photos/seed/a2/400/600" alt="Poster 2"><div class="meta">Movie 2</div></a>
+      <a class="card" href="#" aria-label="Movie 3"><img src="https://picsum.photos/seed/a3/400/600" alt="Poster 3"><div class="meta">Movie 3</div></a>
+      <a class="card" href="#" aria-label="Movie 4"><img src="https://picsum.photos/seed/a4/400/600" alt="Poster 4"><div class="meta">Movie 4</div></a>
+      <a class="card" href="#" aria-label="Movie 5"><img src="https://picsum.photos/seed/a5/400/600" alt="Poster 5"><div class="meta">Movie 5</div></a>
+      <a class="card" href="#" aria-label="Movie 6"><img src="https://picsum.photos/seed/a6/400/600" alt="Poster 6"><div class="meta">Movie 6</div></a>
+      <a class="card" href="#" aria-label="Movie 7"><img src="https://picsum.photos/seed/a7/400/600" alt="Poster 7"><div class="meta">Movie 7</div></a>
+      <a class="card" href="#" aria-label="Movie 8"><img src="https://picsum.photos/seed/a8/400/600" alt="Poster 8"><div class="meta">Movie 8</div></a>
+      <a class="card" href="#" aria-label="Movie 9"><img src="https://picsum.photos/seed/a9/400/600" alt="Poster 9"><div class="meta">Movie 9</div></a>
+      <a class="card" href="#" aria-label="Movie 10"><img src="https://picsum.photos/seed/a10/400/600" alt="Poster 10"><div class="meta">Movie 10</div></a>
+    </div>
+  </section>
+
+  <section class="row">
+    <div class="row-controls">
+      <h2 class="row-title">Popular on Flexflix</h2>
+      <div>
+        <button class="ctrl" data-scroll="-1" aria-label="Scroll left">◀</button>
+        <button class="ctrl" data-scroll="1" aria-label="Scroll right">▶</button>
+      </div>
+    </div>
+    <div class="scroller" id="row-2">
+      <a class="card" href="#" aria-label="Show 1"><img src="https://picsum.photos/seed/b1/400/600" alt="Poster 1"><div class="meta">Show 1</div></a>
+      <a class="card" href="#" aria-label="Show 2"><img src="https://picsum.photos/seed/b2/400/600" alt="Poster 2"><div class="meta">Show 2</div></a>
+      <a class="card" href="#" aria-label="Show 3"><img src="https://picsum.photos/seed/b3/400/600" alt="Poster 3"><div class="meta">Show 3</div></a>
+      <a class="card" href="#" aria-label="Show 4"><img src="https://picsum.photos/seed/b4/400/600" alt="Poster 4"><div class="meta">Show 4</div></a>
+      <a class="card" href="#" aria-label="Show 5"><img src="https://picsum.photos/seed/b5/400/600" alt="Poster 5"><div class="meta">Show 5</div></a>
+      <a class="card" href="#" aria-label="Show 6"><img src="https://picsum.photos/seed/b6/400/600" alt="Poster 6"><div class="meta">Show 6</div></a>
+      <a class="card" href="#" aria-label="Show 7"><img src="https://picsum.photos/seed/b7/400/600" alt="Poster 7"><div class="meta">Show 7</div></a>
+      <a class="card" href="#" aria-label="Show 8"><img src="https://picsum.photos/seed/b8/400/600" alt="Poster 8"><div class="meta">Show 8</div></a>
+      <a class="card" href="#" aria-label="Show 9"><img src="https://picsum.photos/seed/b9/400/600" alt="Poster 9"><div class="meta">Show 9</div></a>
+      <a class="card" href="#" aria-label="Show 10"><img src="https://picsum.photos/seed/b10/400/600" alt="Poster 10"><div class="meta">Show 10</div></a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div>Questions? Call 000-000-000</div>
+    <div class="links">
+      <a href="#">FAQ</a>
+      <a href="#">Help Center</a>
+      <a href="#">Account</a>
+      <a href="#">Media Center</a>
+      <a href="#">Investor Relations</a>
+      <a href="#">Jobs</a>
+      <a href="#">Ways to Watch</a>
+      <a href="#">Terms of Use</a>
+      <a href="#">Privacy</a>
+      <a href="#">Cookie Preferences</a>
+      <a href="#">Corporate Information</a>
+      <a href="#">Contact Us</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
